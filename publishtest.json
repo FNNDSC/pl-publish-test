@@ -1,0 +1,49 @@
+{
+  "name": "pl-publish-test",
+  "dock_image": "docker.io/mhendsch/pl-publish-test:1.0.0",
+  "public_repo": "https://github.com/mhendsch/pl-publish-test",
+  "type": "ds",
+  "parameters": [
+    {
+      "name": "word",
+      "type": "str",
+      "optional": false,
+      "flag": "--word",
+      "short_flag": "-w",
+      "action": "store",
+      "help": "word to count",
+      "default": null,
+      "ui_exposed": true
+    },
+    {
+      "name": "pattern",
+      "type": "str",
+      "optional": true,
+      "flag": "--pattern",
+      "short_flag": "-p",
+      "action": "store",
+      "help": "input file filter glob",
+      "default": "**/*.txt",
+      "ui_exposed": true
+    }
+  ],
+  "icon": "",
+  "authors": "FNNDSC <dev@babyMRI.org>",
+  "title": "My ChRIS plugin",
+  "category": "",
+  "description": "A ChRIS DS plugin template",
+  "documentation": "https://github.com/FNNDSC/python-chrisapp-template",
+  "license": "MIT",
+  "version": "1.0.0",
+  "selfpath": "/usr/local/bin",
+  "selfexec": "commandname",
+  "execshell": "/usr/local/bin/python",
+  "min_number_of_workers": 1,
+  "max_number_of_workers": 1,
+  "min_memory_limit": "100Mi",
+  "max_memory_limit": "",
+  "min_cpu_limit": "1000m",
+  "max_cpu_limit": "",
+  "min_gpu_limit": 0,
+  "max_gpu_limit": 0
+}
