@@ -4,13 +4,17 @@
 [![MIT License](https://img.shields.io/github/license/fnndsc/pl-publish-test)](https://github.com/FNNDSC/pl-publish-test/blob/main/LICENSE)
 [![ci](https://github.com/FNNDSC/pl-publish-test/actions/workflows/ci.yml/badge.svg)](https://github.com/FNNDSC/pl-publish-test/actions/workflows/ci.yml)
 
-`pl-publish-test` is a [_ChRIS_](https://chrisproject.org/)
-_ds_ plugin which takes in ...  as input files and
-creates ... as output files.
+`pl-publish-test` is a dummy  [_ChRIS_](https://chrisproject.org/) plugin to test and showcase the process of publishing plugins to the ChRIS store.
 
-## Abstract
-
-...
+## Publishing to ChRIS Store
+1. Create a new repository in the FNNDSC organization Github
+1. Use the python-chrisapp-template
+1. Clone your repository `git clone https://github.com/FNNDSC/pl-publish-test.git`
+1. Delete line 44 and uncomment line 45 in `pl-publish-test/.github/workflows/ci.yml` [Optional] To enable testing, delete line 22: `if: false  # delete this line to enable automatic testing`
+1. `git tag v1.0.0`
+1. `git push origin v1.0.0`
+1. Monitor the workflow at https://github.com/FNNDSC/pl-publish-test/actions 
+1. Once the build is completed, view it at https://app.chrisproject.org/catalog
 
 ## Installation
 
