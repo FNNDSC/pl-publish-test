@@ -7,6 +7,8 @@
 `pl-publish-test` is a dummy  [_ChRIS_](https://chrisproject.org/) plugin to test and showcase the process of publishing plugins to the ChRIS store.
 
 ## Publishing to ChRIS Store
+
+### Initial Commit
 1. Create a new repository in the FNNDSC organization Github
 1. Use the python-chrisapp-template
 1. Clone your repository `git clone https://github.com/FNNDSC/pl-publish-test.git`
@@ -15,6 +17,13 @@
 1. `git push origin v1.0.0`
 1. Monitor the workflow at https://github.com/FNNDSC/pl-publish-test/actions 
 1. Once the build is completed, view it at https://app.chrisproject.org/catalog
+
+### Subsequent Commits
+1. Update the `__version__` number in `app.py`
+
+   1. If build fails because you forgot to update the `__version__`, remove the tag with `git tag -d v<version number>` and `git push origin :refs/tags/v<version number>`
+1. `git tag v<new version number>`
+1. `git push origin v<new version number>`
 
 ## Installation
 
