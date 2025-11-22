@@ -20,17 +20,17 @@ def get_version(rel_path: str) -> str:
 
 setup(
     name='publish-test',
-    version=get_version('commandname.py'),
+    version=get_version('app.py'),
     description='A ChRIS plugin to demonstrate publishing to ChRIS store',
     author='FNNDSC',
     author_email='dev@babyMRI.org',
     url='https://github.com/FNNDSC/pl-publish-test',
-    py_modules=['commandname'],
+    py_modules=['app'],
     install_requires=['chris_plugin'],
     license='MIT',
     entry_points={
         'console_scripts': [
-            'commandname = commandname:main'
+            'commandname = app:main'
         ]
     },
     classifiers=[
