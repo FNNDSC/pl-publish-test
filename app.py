@@ -5,7 +5,7 @@ from argparse import ArgumentParser, Namespace, ArgumentDefaultsHelpFormatter
 
 from chris_plugin import chris_plugin, PathMapper
 
-__version__ = '1.0.4'
+__version__ = '1.0.5'
 
 DISPLAY_TITLE = r"""
 ChRIS Plugin Template Title
