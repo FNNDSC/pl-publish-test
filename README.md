@@ -48,7 +48,7 @@ apptainer exec docker://fnndsc/pl-publish-test commandname --help
 ## Examples
 
 `commandname` requires two positional arguments: a directory containing
-input data, and a directory where to create output data.
+input data, and a directory for where to create output data.
 First, create the input directory and move input data into it.
 
 ```shell
